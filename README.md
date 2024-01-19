@@ -6,8 +6,8 @@
 3. Configure no arquivo json `confi.json` o secret do JWT, os dados do DB (postgresql), e o IP e a porta em que a API ira rodar.
 4. Execute o aplicativo com `python app.py`.
 5. Endpoints: 
-    `api/auth` envia do payload = {"username": "user", "password": "senha"}
-        esse endpoint ira envia o token da aplicação ex: {
+    `api/auth` enviar no payload = {"username": "user", "password": "senha"}
+        esse endpoint ira envia o token da API ex: {
             "msg": {
                 "token": "token"
             },
