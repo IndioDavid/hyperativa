@@ -5,5 +5,10 @@
         "user": "user",
         "password": "password",
         "database":"database"
+    },
+    "app": {
+        "host": "10.0.0.1",
+        "port": 0
+
     }
 }
