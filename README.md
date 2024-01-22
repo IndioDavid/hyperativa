@@ -13,7 +13,7 @@ Copy code
 pip install -r requirements.txt
 Configuração:
 
-Edite o arquivo confi.json para configurar o segredo do JWT, os detalhes do banco de dados PostgreSQL e as informações de IP e porta em que a API será executada.
+Edite o arquivo config.json para configurar o segredo do JWT, os detalhes do banco de dados PostgreSQL e as informações de IP e porta em que a API será executada.
 Execução do Aplicativo:
 
 Execute o aplicativo usando o seguinte comando no terminal:
