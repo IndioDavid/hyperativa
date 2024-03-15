@@ -1,11 +1,11 @@
 import psycopg2
 from psycopg2.extras import execute_values
-from credetions import Credetions
+from credentials import Credentials
 
 
 class Postgres():
     def _conn(self) -> psycopg2:
-        return psycopg2.connect(**Credetions().__DB__)
+        return psycopg2.connect(**Credentials().__DB__)
     
     def _fetchall(self, sql):
         resp = []
@@ -47,13 +47,13 @@ class Postgres():
                 'msg': 'insert with success'
             }
         
-        except psycopg2.errors.UniqueViolation as e:
+        except psycopg2.errors.UniqueViolation:
             db.rollback()
             db.close()
             return {
                 'status_code': 409, 
                 'state': 'ERROR', 
-                'msg': str(e)
+                'msg': 'card number duplicate'
             }
 
         except Exception as e:

@@ -17,7 +17,7 @@ class Querys(Postgres):
                 ])
                 sql = sql + self.__WHERE__.format(where)
             
-        return super()._fetchall(sql)
+        return self._fetchall(sql)
     
     def insert(self, keys: str, values:list):
 
@@ -26,6 +26,6 @@ class Querys(Postgres):
             sql = self.__INSERT__.format(self.__table__, keys)
             sql = sql + self.__VALUES_INSERT__
 
-            resp = super()._insert(sql, values)
+            resp = self._insert(sql, values)
 
             return resp

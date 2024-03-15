@@ -9,6 +9,10 @@
     "app": {
         "host": "10.0.0.1",
         "port": 0
-
+    },
+    "secret": "qweasdzxc",
+    "auth": {
+        "user": "david.fagundes",
+        "password": "123456"
     }
 }
